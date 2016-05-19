@@ -3,7 +3,7 @@ Google Map Street View Presenter For Real Estate - Using Google Map API V3
 <h1 align="center"><strong>Google  Maps  Street View</strong><strong> Presenter For</strong><strong> </strong><strong>Real Estate</strong></h1>
 <p align="center">(Using <em><strong>Google Maps</strong></em><em><strong> </strong></em>JavaScript&nbsp;<em><strong>API v3</strong></em><em><strong>.</strong></em>)<br />
   Robin Liu - April16,  2016 - Copyright: <a href="http://www.bidwin.org">bidwin.org</a></p>
-<p><a href="http://community.bidwin.org/custom/extensions/googlemapstreetviewpresenter/example.html"><img src="preview.png" width="483" height="635" border="0" /></a></p>
+<p><a href="http://community.bidwin.org/custom/extensions/googlemapstreetviewpresenter/example.html"><img src="http://community.bidwin.org/custom/extensions/googlemapstreetviewpresenter/documentation/preview.png" width="483" height="635" border="0" /></a></p>
 <p><strong>Description</strong><strong>:</strong><br />
   This is a  general purpose javascript solution for all types of Google maps / street view  combinations. A perfect solution for real estate industry. Embed it to your listing detail page, and give your user all complete features Google map street view provides. Visit <a href="http://community.bidwin.org">bidwin.org</a> site for a live demo:</p>
 <p><a href="http://community.bidwin.org/custom/extensions/googlemapstreetviewpresenter/example.html">http://community.bidwin.org/custom/extensions/googlemapstreetviewpresenter/example.html </a></p>
