@@ -1,0 +1,47 @@
+
+.gmsw_main {
+	padding:10px;
+}
+
+.gmsw_default {
+	background:#F2B360;
+	padding:3px;
+}
+
+.gmsw_main .gmsw_map {
+	border-width:2px;
+	border-style:solid;
+	border-color:#F2B360;
+}
+
+.gmsw_main .gmsw_streetview {
+	border-width:2px;
+	border-style:solid;
+	border-color:#F2B360;
+}
+
+.gmsw_button_group {
+	display:block;
+}
+
+.gmsw_main .gmsw_button { 
+	border-width:4px;
+	border-style:solid;
+	width:55px;
+	height:55px;
+}
+
+.gmsw_main .gmsw_map_button { 
+	background-image: url("map_view.png");
+	background-size: cover;
+}
+
+.gmsw_main .gmsw_street_button { 
+	background-image: url("street_view.png");
+	background-size: cover;
+}
+
+.gmsw_main .gmsw_map_street_button { 
+	background-image: url("map_street_view.png");
+	background-size: cover;
+}
