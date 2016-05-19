@@ -145,4 +145,4 @@
   Directions: if true, display  Address textbox and Get Direction button.<br />
   forMap:  if true, create marker  and place it on map view, otherwise place it on street view.<br />
   index: the index of GMSW instance to create marker for. the index for  the first instance is 0.</p>
-<p><stro
+<p><strong>For more information read the “GMSW_main</strong><strong>_v3</strong><strong>.js” file.</strong></p>
