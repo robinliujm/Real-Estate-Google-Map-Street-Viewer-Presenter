@@ -1,4 +1,5 @@
-<p align="center"><strong>Google  Maps &amp; Street View</strong><strong> Presenter For</strong><strong> </strong><strong>Real Estate</strong></p>
+
+<h1 align="center"><strong>Google  Maps  Street View</strong><strong> Presenter For</strong><strong> </strong><strong>Real Estate</strong></h1>
 <p align="center">(Using <em><strong>Google Maps</strong></em><em><strong> </strong></em>JavaScript&nbsp;<em><strong>API v3</strong></em><em><strong>.</strong></em>)<br />
   Robin Liu - April16,  2016 - <a href="http://www.bidwin.org">bidwin.org</a></p>
 <p><a href="http://community.bidwin.org/custom/extensions/googlemapstreetviewpresenter/example.html"><img src="http://community.bidwin.org/custom/extensions/googlemapstreetviewpresenter/preview.png" border="0" /></a></p>
@@ -148,3 +149,4 @@
   forMap:  if true, create marker  and place it on map view, otherwise place it on street view.<br />
   index: the index of GMSW instance to create marker for. the index for  the first instance is 0.</p>
 <p><strong>For more information read the “GMSW_main</strong><strong>_v3</strong><strong>.js” file.</strong></p>
+
