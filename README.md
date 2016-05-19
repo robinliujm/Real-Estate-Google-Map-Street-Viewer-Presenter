@@ -6,17 +6,18 @@
 <p><strong>Description</strong><strong>:</strong><br />
   This is a  general purpose javascript solution for all types of Google maps / street view  combinations. A perfect solution for real estate industry. Embed it to your listing detail page, and give your user all complete features Google map street view provides. Visit <a href="http://community.bidwin.org">bidwin.org</a> site for a live demo:</p>
 <p><a href="http://community.bidwin.org/custom/extensions/googlemapstreetviewpresenter/example.html">http://community.bidwin.org/custom/extensions/googlemapstreetviewpresenter/example.html </a></p>
+<p>The UI is also features Mobile Friendly. </p>
 <p><strong>Usage:</strong><br />
-The plug-in requires the <a href="https://developers.google.com/maps/">Google Maps API</a>. Integration is pretty simple:<br>
-&lt;script type="text/javascript" src='http://maps.google.com/maps/api/js?sensor=false&amp;libraries=places'&gt;&lt;/script&gt;
-
-<br>
-<br>
-The plug-in also requires these two files inlcuded in the html head tag:
-<br>
-gmsw_style.css
-<br>
-gmsw_main_v3.js</p>
+  The plug-in requires the <a href="https://developers.google.com/maps/">Google Maps API</a>. Integration is pretty simple:<br>
+  &lt;script type="text/javascript" src='http://maps.google.com/maps/api/js?sensor=false&amp;libraries=places'&gt;&lt;/script&gt;
+  
+  <br>
+  <br>
+  The plug-in also requires these two files inlcuded in the html head tag:
+  <br>
+  gmsw_style.css
+  <br>
+  gmsw_main_v3.js</p>
 <p><strong>Documentation:</strong></p>
 <p><strong>1,  </strong><strong>To  create a basic instance, use this syntax:</strong></p>
 <p>GMSW.Create  ({Address : &quot;1235 Athabasca St E, Moose Jaw, SK, Canada&quot;}); </p>
