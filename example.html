@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta http-equiv="cache-control" content="no-cache" />
+	
+	
+<!-- Start of GoogleMapStreetPresenter in html head -->
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places,geometry&language=en&key=AIzaSyAeoWbu69WNABKko9bPeBv9KMl48Xp_gIA"></script>
+	<link rel="stylesheet" type="text/css" href="/Custom/Extensions/Googlemapstreetviewpresenter/gmsw_style.css" />
+	<script type="text/javascript" src="/Custom/Extensions/Googlemapstreetviewpresenter/gmsw_main_v3.js"></script>
+<!-- End of GoogleMapStreetPresenter  in html head -->
+
+	
+</head> 
+<body>
+
+
+
+<!-- Start of GoogleMapStreetPresenter in html body-->
+    <div class="gmsw_main">
+		<script type="text/javascript">
+			// Address accepts latitude and longitude separated by ",",  for example:  "50.395246,
+			var address; 
+			address = "30 carrington dr, Moose Jaw, Moose Jaw, SK , Canada";
+			
+			// LatLng example format: {lat:50.395191,lng:-105.500712}
+			var latLng;
+			latLng = {lat:50.381071 , lng: -105.583663};  
+			
+			//data for testing only. farmland location, no street view
+			//latLng = {lat:49.613776 , lng: -103.920191};
+		
+			var startingYaw = null; //if null, yaw will be computed baed on the lat and lng of the property
+			//listing should have a custom field called FacingDirection which we need to conver to Yaw value
+			startingYaw = GMSW.FacingDirectionToYaw("west");
+		
+			var startingPitch = 0;    
+		
+			//text to dispaly in marker popup box.
+			var markerText = address + "\n Current Price: $149,900";
+
+
+			//Create Map View, Street View and View Controls, and display them.
+			//if both address and LatLng are provided, use latLng to plot map, streeview, marker, and compute Yaw
+			GMSW.Create({
+				MapType: "G_TERRAIN_ROAD",  //G_NORMAL_MAP, G_SATELLITE_MAP, G_HYBRID_MAP, G_TERRAIN_MAP
+				Address: address,  
+				LatLng: latLng,
+				MapZoomLevel : 15,  //map zoom: 0-19, optimal is ~16. 
+				StreetZoomLevel : 1.5,   // street view zoom: 0-4, 1 is the default and optimal
+				StartingYaw: startingYaw,
+				StartingPitch : startingPitch,
+				ViewWidth: "500px",  //can be 100%
+				MapHeight: "300px",
+				StreetViewHeight: "300px",
+				Markers : {
+					Marker1 : { 
+						//if no address or latlng is provided for this marker, 
+						//use the above address or latlng to plot this marker.
+						Text : markerText,  //for displaying text only
+						DisplayText : true, //display text on marker popup
+						Directions : true  //display Directions button and input box on marker popup
+					},
+					Marker2 : {
+						//if both Address and latlng are provided for this marker, use latlng to plot this marker.
+						Address : "202 grandview st west, moose jaw, sk",
+						LatLng: {lat:50.395191,lng:-105.500712},
+						Text : "202 grandview st west",  //for displaying text only
+						DisplayText : true,
+						Directions : true
+					}
+				},
+				ControlOptions : { 
+					ShowMapControl:true,  //show map view control button
+					ShowStreetControl: true ,   //show street view control button
+					ShowMapStreetControl: true,   //show map view control button
+					ColorSelected: "#F2B360",  //the border color of the view control button selected
+					ColorUnselected: "#ededed",  //the border color of the view control button unselected
+					ControlsOnTop: true   //view control buttons will be rendered on top of map view and streetview
+				}
+			});
+
+			//show map only initially. 
+			GMSW.ShowViews(true, false);
+
+		</script>
+	</div>
+<!-- End of GoogleMapStreetPresenter in html body-->
+
+
+
+</body>
+</html>
