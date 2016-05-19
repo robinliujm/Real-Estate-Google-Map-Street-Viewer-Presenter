@@ -1,17 +1,19 @@
 <p align="center"><strong>Google  Maps &amp; Street View</strong><strong> Presenter For</strong><strong> </strong><strong>Real Estate</strong></p>
 <p align="center">(Using <em><strong>Google Maps</strong></em><em><strong> </strong></em>JavaScript&nbsp;<em><strong>API v3</strong></em><em><strong>.</strong></em>)<br />
-  Robin Liu - April16,  2016</p>
+  Robin Liu - April16,  2016 - <a href="http://www.bidwin.org">bidwin.org</a></p>
+<p><a href="http://community.bidwin.org/custom/extensions/googlemapstreetviewpresenter/example.html"><img src="http://community.bidwin.org/custom/extensions/googlemapstreetviewpresenter/preview.png" border="0" /></a></p>
 <p><strong>Description</strong><strong>:</strong><br />
-  This is a  general purpose javascript solution for all types of Google maps / street view  combinations. A perfect solution for improving user experience i.e. contact  forms, “about us” boxes etc.</p>
+  This is a  general purpose javascript solution for all types of Google maps / street view  combinations. A perfect solution for real estate industry. Add it to your listing detail page, and give your user all complete features Google map street view provides. Visit <a href="http://community.bidwin.org">bidwin.org</a> site for a live demo:</p>
+<p><a href="http://community.bidwin.org/custom/extensions/googlemapstreetviewpresenter/example.html">http://community.bidwin.org/custom/extensions/googlemapstreetviewpresenter/example.html </a></p>
 <p><strong>Installation:</strong><br />
   Extract the  archive. Edit the file “GMSW_main_v3.js”. Search for the variable GMSW.Key. Change the variable to whatever  your google maps api key is. For more information about api key generating  visit <a href="http://code.google.com/intl/sk/apis/maps/signup.html">http://code.google.com/intl/sk/apis/maps/signup.html</a><br />
   Run the  examples in the archive and start your own implementation.</p>
 <p><strong>Documentation:</strong></p>
 <p><strong>1,  </strong><strong>To  create a basic instance, use this syntax:</strong></p>
-<p>GMSW.Create  ({Address : &quot;Toronto, Canada&quot;}); </p>
+<p>GMSW.Create  ({Address : &quot;1235 Athabasca St E, Moose Jaw, SK, Canada&quot;}); </p>
 <p>Following  parameters are supported:</p>
 <p><strong><u>Address</u></strong>.<br />
-  The address  of the map instance. i.e. “Rome,   Italy”.  can accept latitude and longitude separated  by &quot;,&quot;,  for example:  &quot;50.395246, -105.500470&quot;</p>
+  The address  of the map instance. i.e. “1235 Athabasca St E, Moose Jaw, SK, Canada”.  can accept latitude and longitude separated  by &quot;,&quot;,  for example:  &quot;50.395246, -105.500470&quot;</p>
 <p><strong><u>LatLng:</u></strong>   <br />
   example format:  {lat:50.395191,lng:-105.500712}.   if both address and LatLng are provided, use LatLng  to plot map, street view and main marker.</p>
 <p><strong><u>StartingYaw:</u></strong><strong>  </strong>Optional.<br />
